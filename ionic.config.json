@@ -1,0 +1,7 @@
+{
+  "name": "gotdirt-angular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
