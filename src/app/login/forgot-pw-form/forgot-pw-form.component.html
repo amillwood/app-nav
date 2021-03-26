@@ -1,0 +1,31 @@
+<div>
+  <form #f="ngForm">
+    <h3>
+      Enter your email below to have a link sent to you to reset your password.
+    </h3>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input
+        class="form-control"
+        ngModel
+        name="email"
+        matInput
+        type="email"
+        placeholder="Enter your email"
+        required
+        email
+      />
+      <mat-error>Please enter a valid email.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Reset Password</button>
+    <button
+      style="margin-top: 1rem"
+      type="button"
+      mat-raised-button
+      color="primary"
+      (click)="onCancel()"
+    >
+      Cancel
+    </button>
+  </form>
+</div>

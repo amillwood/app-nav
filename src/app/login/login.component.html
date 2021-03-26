@@ -1,0 +1,55 @@
+<ion-header>
+  <mat-toolbar class="ion-text-align-center" color="primary">
+    <mat-toolbar-row>
+      <span>{{ this.form }}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="ion-padding">
+    <ion-img
+      style="margin: 20px auto; width: 200px"
+      src="../../assets/icon/icon.png"
+    ></ion-img>
+  </ion-row>
+  <ion-row class="ion-padding ion-margin-start ion-margin-end">
+    <ion-col>
+      <app-login-form *ngIf="form === 'Login' && !showFPWForm"></app-login-form>
+      <app-register-form *ngIf="form === 'Register'"
+        >Register</app-register-form
+      >
+      <app-forgot-pw-form
+        *ngIf="form === 'Login' && showFPWForm"
+      ></app-forgot-pw-form>
+    </ion-col>
+  </ion-row>
+  <ion-row
+    class="or-container ion-align-items-center ion-justify-content-center"
+  >
+    <ion-col size="4"><hr /></ion-col>
+    <ion-col size="2"
+      ><h2 style="margin: 0; text-align: center" color="primary">
+        OR
+      </h2></ion-col
+    >
+    <ion-col size="4"><hr /></ion-col>
+  </ion-row>
+  <ion-row class="ion-padding">
+    <h2 *ngIf="this.form === 'Login'">New to GotDirt.org?</h2>
+    <h2 *ngIf="this.form === 'Register'">Already have an account?</h2>
+  </ion-row>
+  <ion-row
+    class="ion-padding-start ion-padding-end ion-margin-start ion-margin-end"
+  >
+    <ion-col>
+      <button
+        mat-raised-button
+        color="primary"
+        type="button"
+        (click)="onToggleRegister()"
+      >
+        {{ this.toggleRegisterText }}
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,58 @@
+<div>
+  <form #f="ngForm">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input
+        class="form-control"
+        ngModel
+        name="name"
+        matInput
+        type="text"
+        placeholder="Name or Business"
+        required
+      />
+      <mat-error>Please enter your name or business.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input
+        class="form-control"
+        ngModel
+        name="email"
+        matInput
+        type="email"
+        placeholder="Enter your email"
+        required
+        email
+      />
+      <mat-error>Please enter a valid email.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input
+        class="form-control"
+        ngModel
+        name="password"
+        matInput
+        type="password"
+        placeholder="Enter your password"
+        required
+      />
+      <mat-error>Please enter your password.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Confirm Password</mat-label>
+      <input
+        class="form-control"
+        ngModel
+        name="confirmPassword"
+        matInput
+        type="password"
+        placeholder="Confirm your password"
+        required
+      />
+      <mat-error>Please confirm your password.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Register</button>
+  </form>
+</div>

@@ -1,0 +1,79 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+$got-dirt-brown: (
+  50: #f3e8e3,
+  100: #e2c5b9,
+  200: #cf9e8a,
+  300: #bb775b,
+  400: #ad5938,
+  500: #9e3c15,
+  600: #963612,
+  700: #8c2e0f,
+  800: #82270c,
+  900: #701a06,
+  A100: #ffada0,
+  A200: #ff806d,
+  A400: #ff543a,
+  A700: #ff3e20,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+  ),
+);
+$got-dirt-yellow: (
+  50: #fdf4e4,
+  100: #fae4bc,
+  200: #f6d28f,
+  300: #f2c062,
+  400: #f0b341,
+  500: #eda51f,
+  600: #eb9d1b,
+  700: #e89317,
+  800: #e58a12,
+  900: #e0790a,
+  A100: #ffffff,
+  A200: #ffead7,
+  A400: #ffcfa4,
+  A700: #ffc28b,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+/* ======== Angular material custom themes ======== */
+$my-custom-primary: mat-palette($got-dirt-brown);
+$my-custom-accent: mat-palette($got-dirt-yellow);
+$my-custom-warn: mat-palette($mat-red);
+
+$my-custom-theme: mat-light-theme(
+  $my-custom-primary,
+  $my-custom-accent,
+  $my-custom-warn
+);
+
+@include angular-material-theme($my-custom-theme);
