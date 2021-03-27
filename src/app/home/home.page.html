@@ -2,7 +2,38 @@
   <mat-toolbar class="ion-text-align-center" color="primary">
     <mat-toolbar-row>
       <span>Home</span>
+      <span class="spacer"></span>
+      <button mat-button *ngIf="router.url!=='/home'" (click)="dismiss()">
+        <ion-icon size="large" name="close"></ion-icon>
+      </button>
     </mat-toolbar-row>
   </mat-toolbar>
 </ion-header>
-<ion-content> </ion-content>
+<ion-content>
+  <ion-row class="slide-container">
+    <ion-col>
+      <ion-slides (ionSlidesDidLoad)="updateSlides()" pager>
+        <ion-slide *ngFor="let page of pages" class="ion-padding">
+          <ion-card color="primary" button routerLink="{{page.path}}">
+            <ion-card-header>
+              <ion-card-title>{{page.title}} </ion-card-title></ion-card-header
+            >
+            <ion-card-content>
+              <ion-row>
+                <ion-col>
+                  <ion-icon name="{{page.icon}}"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-card-subtitle>{{page.description}}</ion-card-subtitle>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+  <hr />
+</ion-content>

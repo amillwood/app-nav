@@ -26,3 +26,18 @@
 #container a {
   text-decoration: none;
 }
+.spacer {
+  flex: 1 1 auto;
+}
+.slide-container {
+  height: 40%;
+}
+ion-slides {
+  height: 100%;
+}
+hr {
+  background-color: var(--ion-color-primary-shade);
+}
+ion-icon {
+  font-size: 5rem;
+}

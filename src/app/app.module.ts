@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { RegisterFormComponent } from './login/register-form/register-form.component';
 import { ForgotPwFormComponent } from './login/forgot-pw-form/forgot-pw-form.component';
 import { AngularMaterialModule } from './angular-material.module';
+import { HomePage } from './home/home.page';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AngularMaterialModule } from './angular-material.module';
     LoginComponent,
     LoginFormComponent,
     RegisterFormComponent,
-    ForgotPwFormComponent
+    ForgotPwFormComponent,
+    HomePage
 
   ],
   entryComponents: [],
