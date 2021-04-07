@@ -12,8 +12,16 @@
 <ion-content>
   <ion-row class="slide-container">
     <ion-col>
-      <ion-slides (ionSlidesDidLoad)="updateSlides()" pager>
-        <ion-slide *ngFor="let page of pages" class="ion-padding">
+      <ion-slides
+        class="ion-padding ion-align-items-center"
+        (ionSlidesDidLoad)="updateSlides()"
+        pager
+      >
+        <ion-slide
+          *ngFor="let page of pages"
+          class="ion-padding"
+          class="ion-align-items-center"
+        >
           <ion-card color="primary" button routerLink="{{page.path}}">
             <ion-card-header>
               <ion-card-title>{{page.title}} </ion-card-title></ion-card-header
@@ -35,5 +43,32 @@
       </ion-slides>
     </ion-col>
   </ion-row>
-  <hr />
+  <ion-row>
+    <ion-col>
+      <ion-toolbar style="border-top: 1px solid var(--ion-color-primary)">
+        <ion-title color="primary">About Us</ion-title>
+      </ion-toolbar>
+      <ion-text>
+        <p class="ion-padding">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ad
+          dolore atque animi dignissimos ipsa aliquid ratione ab sapiente
+          cumque. Quos in nisi pariatur temporibus voluptatum eligendi, sit
+          nesciunt. Blanditiis! Natus, minus necessitatibus? Adipisci deserunt
+          labore, maxime, asperiores eos harum expedita voluptas aperiam tempore
+          at nesciunt doloribus cum ducimus, ipsum sit ullam beatae. Mollitia
+          eaque corrupti maxime iste magnam a. Numquam omnis similique dolore
+          nulla deserunt quasi fugiat modi repellat, dolorum ipsam magni aut
+          tempora maiores! Libero velit, dignissimos eaque nobis accusantium
+          sequi ducimus, officia magnam, dicta animi obcaecati quam? Harum quis
+          velit tenetur. Quo ratione doloremque nostrum cum fuga sint voluptates
+          quasi eos rem dicta molestias modi provident pariatur asperiores
+          repudiandae animi rerum, deserunt quod delectus. Atque, numquam enim?
+          Ratione nobis dolor a deleniti id, perspiciatis unde, recusandae quis
+          officiis, dicta impedit fugit fuga blanditiis reiciendis maiores ea
+          laborum. Architecto minus dolores, molestias ipsa velit tempora optio
+          expedita totam?
+        </p>
+      </ion-text>
+    </ion-col>
+  </ion-row>
 </ion-content>

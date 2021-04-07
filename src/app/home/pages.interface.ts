@@ -12,28 +12,28 @@ const ViewListings: page = {
   key: "viewlistings",
   title: "View Listings",
   icon: 'map',
-  description: "View All Got and Need Dirt Listings",
+  description: "View All Listings",
   path: "/ViewListings"
 };
 const CreateListing: page = {
   key: "createlisting",
   title: "Create a Listing",
   icon: 'newspaper',
-  description: "Create Your Own Got or Need Dirt Listing",
+  description: "Create Your Own Listing",
   path: "/CreateListing"
 };
 const Pricing: page = {
   key:"pricing",
   title: "Pricing",
   icon: 'pricetags',
-  description: "Browse The Various GotDirt.org Plans",
+  description: "Browse The Various Plans",
   path: "/Pricing"
 };
 const Login: page = {
   key:"login",
   title: "Login",
   icon: 'log-in',
-  description: "Login or Register an Account",
+  description: "Login or Register",
   path: "/Login"
 };
 const Account: page = {

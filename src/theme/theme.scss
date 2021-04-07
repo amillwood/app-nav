@@ -1,7 +1,7 @@
 @import "~@angular/material/theming";
 @include mat-core();
 
-$got-dirt-brown: (
+$MWD-brown: (
   50: #f3e8e3,
   100: #e2c5b9,
   200: #cf9e8a,
@@ -33,7 +33,7 @@ $got-dirt-brown: (
     A700: #ffffff,
   ),
 );
-$got-dirt-yellow: (
+$MWD-yellow: (
   50: #fdf4e4,
   100: #fae4bc,
   200: #f6d28f,
@@ -66,8 +66,8 @@ $got-dirt-yellow: (
   ),
 );
 /* ======== Angular material custom themes ======== */
-$my-custom-primary: mat-palette($got-dirt-brown);
-$my-custom-accent: mat-palette($got-dirt-yellow);
+$my-custom-primary: mat-palette($MWD-brown);
+$my-custom-accent: mat-palette($MWD-yellow);
 $my-custom-warn: mat-palette($mat-red);
 
 $my-custom-theme: mat-light-theme(

@@ -33,7 +33,9 @@
   height: 40%;
 }
 ion-slides {
-  height: 100%;
+  ion-card {
+    width: 80%;
+  }
 }
 hr {
   background-color: var(--ion-color-primary-shade);
