@@ -1,0 +1,47 @@
+.need-dirt-segment-button {
+  --color-checked: var(--ion-color-primary-accent);
+  --border-color: var(--ion-color-primary-accent);
+}
+ion-grid {
+  max-width: 725px;
+}
+mat-toolbar h1 {
+  margin: auto;
+}
+.image-upload-button-container {
+  ion-col {
+    width: 40%;
+    margin: auto;
+  }
+  ion-button {
+    width: 100%;
+  }
+}
+
+div {
+  width: 80%;
+  margin: auto;
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.submit-button-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  ion-button {
+    --padding-top: 1.5rem;
+    --padding-bottom: 1.5rem;
+    font-size: large;
+  }
+}
+
+.image-preview {
+  position: relative;
+  ion-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}

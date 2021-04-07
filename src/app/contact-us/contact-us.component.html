@@ -1,0 +1,47 @@
+<ion-header>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h1>Contact Us</h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</ion-header>
+<ion-content>
+  <div class="form-container">
+    <form #f="ngForm">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input
+          class="form-control"
+          ngModel
+          name="name"
+          matInput
+          type="text"
+          placeholder="Name or Business"
+          required
+        />
+        <mat-error>Please enter your name or business.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          class="form-control"
+          ngModel
+          name="email"
+          matInput
+          type="email"
+          placeholder="Enter your email"
+          required
+          email
+        />
+        <mat-error>Please enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Message</mat-label>
+        <textarea name="message" matInput ngModel required></textarea>
+        <mat-error>Please enter a message.</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Send Message</button>
+    </form>
+  </div>
+</ion-content>

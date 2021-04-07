@@ -14,6 +14,7 @@ export class HomePage implements OnInit {
   constructor(private modalController:ModalController, public router:Router) {}
 
   dismiss(){
+    console.log('dismiss home modal')
     this.modalController.dismiss()
   }
   ngOnInit(){

@@ -36,14 +36,14 @@ const Login: page = {
   description: "Login or Register",
   path: "/Login"
 };
-const Account: page = {
-  key:"account",
-  title: "Account",
-  icon: 'person',
-  description: "Manage My Account",
-  path: "/Account"
+const ContactUs: page = {
+  key:"contact",
+  title: "Contact Us",
+  icon: 'mail',
+  description: "Send us a message.",
+  path: "/ContactUs"
 };
 
-const Pages = [ViewListings,CreateListing,Pricing,Login,Account]
+const Pages = [ViewListings,CreateListing,Pricing,ContactUs,Login]
 
 export default Pages

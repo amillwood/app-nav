@@ -1,0 +1,45 @@
+mat-toolbar h1 {
+  margin: auto;
+}
+ion-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  ion-slide {
+    margin: auto;
+  }
+  ion-card {
+    // height: 100%;
+    // min-width: 20rem;
+    ion-card-title {
+      text-align: center;
+    }
+    ion-card-content {
+      margin-bottom: 3rem;
+      h2 {
+        color: var(--ion-color-secondary-contrast);
+        text-align: center;
+        line-height: 2;
+        font-size: 4rem;
+        sub {
+          font-size: 1rem;
+        }
+      }
+      h3 {
+        font-size: 1rem;
+        color: var(--ion-color-secondary-contrast);
+        text-align: center;
+      }
+      hr {
+        background-color: var(--ion-color-primary);
+      }
+    }
+    ion-button {
+      position: absolute;
+      bottom: 0;
+      width: 80%;
+      margin: 1rem 10%;
+    }
+  }
+}

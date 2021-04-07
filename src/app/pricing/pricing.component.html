@@ -1,0 +1,37 @@
+<ion-header>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h1>Pricing</h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-slides pager>
+        <ion-slide class="ion-padding" *ngFor="let plan of pricingPlans">
+          <ion-card class="ion-margin">
+            <ion-card-header color="primary">
+              <ion-card-title>{{ plan.name }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <h2>
+                ${{ plan.price
+                }}<sub *ngIf="plan.interval">/{{ plan.interval }}</sub>
+              </h2>
+
+              <h3>{{ plan.description }}</h3>
+
+              <hr />
+
+              <h4>{{ plan.tagline }}</h4>
+            </ion-card-content>
+            <div>
+              <ion-button expand="block" routerLink="/Login">Select</ion-button>
+            </div>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+</ion-content>

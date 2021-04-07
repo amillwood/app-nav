@@ -22,7 +22,12 @@
           class="ion-padding"
           class="ion-align-items-center"
         >
-          <ion-card color="primary" button routerLink="{{page.path}}">
+          <ion-card
+            color="primary"
+            button
+            (click)="dismiss()"
+            routerLink="{{page.path}}"
+          >
             <ion-card-header>
               <ion-card-title>{{page.title}} </ion-card-title></ion-card-header
             >
