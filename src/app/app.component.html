@@ -6,7 +6,7 @@
     color="primary"
     mat-raised-button
     *ngIf="router.url != '/home'"
-    (click)="presentModal()"
+    (click)="onToggleHome()"
     style="position: absolute; bottom: 0; left: 0"
   >
     <ion-icon
@@ -15,5 +15,10 @@
       name="home-outline"
     ></ion-icon>
   </button>
+  <div
+    style="position: absolute; bottom: 0; left: 0"
+    [@homeButton]="homeState"
+    (@homeButton.done)="onFinishAnimation()"
+  ></div>
   <!-- <ion-button>Test</ion-button> -->
 </ion-app>

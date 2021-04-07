@@ -37,7 +37,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot({animated:false}),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
