@@ -11,9 +11,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomePage,
+    data: {animation:'HomePage'}
 
   },
-  { path:'Login', component: LoginComponent, },
+  { path:'Login', component: LoginComponent,data: {animation:'LoginPage'}},
   { path:'Pricing', component: PricingComponent, },
   { path:'CreateListing', component: CreateListingComponent, },
   { path:'ContactUs', component: ContactUsComponent, },

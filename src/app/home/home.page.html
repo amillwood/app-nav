@@ -25,7 +25,7 @@
           <ion-card
             color="primary"
             button
-            (click)="dismiss()"
+            (click)="router.url !== '/home' ? dismiss():null"
             routerLink="{{page.path}}"
           >
             <ion-card-header>

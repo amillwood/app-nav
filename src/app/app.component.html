@@ -1,5 +1,13 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-content>
+    <div
+      style="width: 100%; height: 100%"
+      [@routeAnimations]="prepareRoute(outlet)"
+    >
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+  </ion-content>
+
   <!-- <app-home *ngIf="showHome"></app-home> -->
   <button
     class="ion-padding"
